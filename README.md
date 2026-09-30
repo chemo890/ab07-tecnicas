@@ -1,2 +1,2 @@
-# ab07-tecnicas
+# Lab07-tecnicas
 Bitacora de tecnicas avanzadas de prompting
