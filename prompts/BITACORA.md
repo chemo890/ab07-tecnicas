@@ -24,11 +24,7 @@ Herramienta de IA usada: (escribe aqui cual usaste)
 ## Ejercicio 5: Descomposicion
 ### Registro de pasos
 
-## 2. Pedido por pasos
-
-### Paso 1
-
-## 2. Pedido por pasos
+##  Pedido por pasos
 
 ### Paso 1
 
@@ -63,8 +59,17 @@ Revisó el código de `Producto` y me dio 3 sugerencias para mejorarlo.
 La revisión fue más específica porque la IA ya conocía el código creado en los pasos anteriores. En el pedido de una sola vez, todo se habría generado al mismo tiempo.
 
 ## Ejercicio 6: Prompt estructurado y autocritica
+| Qué revisar | Cumple (Sí / No) |
+|---|---|
+| ¿Tiene las 4 columnas pedidas? | Sí |
+| ¿Incluye el bloqueo después de 3 intentos? | Sí |
+| ¿Incluye casos con campos vacíos? | Sí |
+| ¿Indica qué casos agregó en la autocrítica? | Campos vacíos, correo sin @, contraseña con espacios, límite exacto de 3 intentos fallidos |
+| ¿Hay algún caso repetido o que no tenga sentido? | Sí, intentos de inicio de sesión |
+ 
 
 ```text 
 <rol>Actua como analista de pruebas de software.</rol> <contexto>Login web con correo y contrasena. La cuenta se bloquea despues de 3 intentos fallidos.</contexto> <tarea>Piensa paso a paso que puede fallar y escribe 6 casos de prueba.</tarea> <formato>Tabla con las columnas: ID, escenario, datos de entrada, resultado esperado.</formato>
 |------------------------------------------------------------------------------|
-Revisa tu tabla: faltan casos limite como campos vacios, correo sin @ o contrasena con espacios? Agrega los que falten e indica cuales agregaste.``` 
+Revisa tu tabla: faltan casos limite como campos vacios, correo sin @ o contrasena con espacios? Agrega los que falten e indica cuales agregaste.
+```
